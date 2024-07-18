@@ -13,6 +13,7 @@ public class dup {
         Map<Character, Long> count=s.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
         System.out.println("Count"+count);
         count.entrySet().stream().filter(entry->entry.getValue()>1).forEach(System.out::println);
+        System.out.println("Count"+count);
 
     }
 }
